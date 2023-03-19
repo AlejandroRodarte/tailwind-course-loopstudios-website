@@ -14,6 +14,64 @@
     <title>Loopstudios Website</title>
   </head>
   <body>
-    <h1 class="text-3xl">Hello</h1>
+    <!-- Hero Section -->
+    <section id="hero">
+      <!-- Hero Main Container -->
+      <div class="container mx-auto max-w-6xl px-6 py-12">
+        <!-- Logo/Menu Items Container -->
+        <nav class="flex items-center justify-between font-bold text-white">
+          <!-- Logo Image -->
+          <img src="images/logo.svg" alt="" />
+          <!-- Menu Items Container (Desktop-Only) -->
+          <!-- 1. display: hidden so this container hides on mobile -->
+          <!-- 2. md:flex so this container appears as a flexbox on larger screens -->
+          <div class="hidden h-10 font-alata md:flex md:space-x-8">
+            <!-- 1st Menu Item -->
+            <div class="group">
+              <a href="#">About</a>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-blue-50"
+              ></div>
+            </div>
+            <!-- 2nd Menu Item -->
+            <div class="group">
+              <a href="#">Careers</a>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-blue-50"
+              ></div>
+            </div>
+            <!-- 3rd Menu Item -->
+            <div class="group">
+              <a href="#">Events</a>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-blue-50"
+              ></div>
+            </div>
+            <!-- 4th Menu Item -->
+            <div class="group">
+              <a href="#">Products</a>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-blue-50"
+              ></div>
+            </div>
+            <!-- 5th Menu Item -->
+            <div class="group">
+              <a href="#">Support</a>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-blue-50"
+              ></div>
+            </div>
+          </div>
+          <!-- TODO: Hamburger Button (Mobile-Only) -->
+        </nav>
+        <!-- TODO: Mobile-Only Menu -->
+        <!-- Bottom Hero Content Container -->
+        <div
+          class="my-32 max-w-lg border-2 p-4 font-sans text-4xl uppercase text-white md:p-10 md:text-6xl"
+        >
+          Impressive Experiences That Deliver
+        </div>
+      </div>
+    </section>
   </body>
 </html>
