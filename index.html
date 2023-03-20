@@ -62,7 +62,22 @@
               ></div>
             </div>
           </div>
-          <!-- TODO: Hamburger Button (Mobile-Only) -->
+          <!-- Hamburger Button (Mobile-Only) -->
+          <!-- 1. md:hidden so it dissappears on larger screens -->
+          <div class="md:hidden">
+            <!-- Main Hamburger Container -->
+            <!-- 1. also remains hidden on larger screens -->
+            <button
+              id="menu-btn"
+              type="button"
+              class="hamburger open block focus:outline-none md:hidden"
+            >
+              <!-- Three lines that compose the hamburger icon -->
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
+            </button>
+          </div>
         </nav>
         <!-- TODO: Mobile-Only Menu -->
         <!-- Bottom Hero Content Container -->
@@ -407,19 +422,31 @@
               <!-- Icon 2 Container -->
               <div class="group h-8">
                 <a href="#">
-                  <img src="images/icon-twitter.svg" alt="" class="ficon h-6 duration-200" />
+                  <img
+                    src="images/icon-twitter.svg"
+                    alt=""
+                    class="ficon h-6 duration-200"
+                  />
                 </a>
               </div>
               <!-- Icon 3 Container -->
               <div class="group h-8">
                 <a href="#">
-                  <img src="images/icon-pinterest.svg" alt="" class="ficon h-6 duration-200" />
+                  <img
+                    src="images/icon-pinterest.svg"
+                    alt=""
+                    class="ficon h-6 duration-200"
+                  />
                 </a>
               </div>
               <!-- Icon 4 Container -->
               <div class="group h-8">
                 <a href="#">
-                  <img src="images/icon-instagram.svg" alt="" class="ficon h-6 duration-200" />
+                  <img
+                    src="images/icon-instagram.svg"
+                    alt=""
+                    class="ficon h-6 duration-200"
+                  />
                 </a>
               </div>
             </div>

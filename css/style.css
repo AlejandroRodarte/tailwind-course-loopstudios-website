@@ -568,6 +568,73 @@ video {
       brightness(101%) contrast(94%);
 }
 
+/* Hamburger Icon classes */
+
+/* Rules for the parent hamburger container */
+
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.2s;
+  /* relative position since the children will be positioned as absolute */
+  position: relative;
+}
+
+/* Rules for the children of the hambuarger container (lines) */
+
+.hamburger-top,
+  .hamburger-middle,
+  .hamburger-bottom {
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  /* they all start in the same position */
+  top: 0;
+  left: 0;
+  background: #fff;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+/* Rules for the middle hamburger line */
+
+.hamburger-middle {
+  /* push it 7px down */
+  transform: translateY(7px);
+}
+
+/* Rules for the bottom hamburger line */
+
+.hamburger-bottom {
+  /* push it 14px down */
+  transform: translateY(14px);
+}
+
+/* Rules to apply to the parent hamburger container when the "open" class is active */
+
+.hamburger.open {
+  transform: rotate(90deg);
+}
+
+/* Rules to apply to the top line of the hamburger icon when the "open" class is active */
+
+.hamburger.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+/* Rules to apply to the middle line of the hamburger icon when the "open" class is active */
+
+.hamburger.open .hamburger-middle {
+  display: none;
+}
+
+/* Rules to apply to the bottom line of the hamburger icon when the "open" class is active */
+
+.hamburger.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
 .absolute {
   position: absolute;
 }
@@ -629,6 +696,10 @@ video {
 
 .mt-10 {
   margin-top: 2.5rem;
+}
+
+.block {
+  display: block;
 }
 
 .flex {
@@ -838,6 +909,11 @@ video {
     background-image: url('../images/mobile/image-hero.jpg');
     background-position: center;
   }
+}
+
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 .group:hover .group-hover\:scale-110 {
