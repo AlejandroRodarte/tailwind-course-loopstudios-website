@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
     <title>Loopstudios Website</title>
   </head>
   <body>
@@ -67,10 +68,11 @@
           <div class="md:hidden">
             <!-- Main Hamburger Container -->
             <!-- 1. also remains hidden on larger screens -->
+            <!-- 2. z-20 so it remains on top of the mobile menu (z-10) -->
             <button
               id="menu-btn"
               type="button"
-              class="hamburger open block focus:outline-none md:hidden"
+              class="hamburger z-20 block focus:outline-none md:hidden"
             >
               <!-- Three lines that compose the hamburger icon -->
               <span class="hamburger-top"></span>
@@ -79,7 +81,21 @@
             </button>
           </div>
         </nav>
-        <!-- TODO: Mobile-Only Menu -->
+        <!--  Mobile-Only Menu -->
+        <!-- 1. absolute position: relative to the <body> since direct ancestor is static, not relative -->
+        <!-- 2. top-0, left-0 to anchor menu overlay to the top-left -->
+        <!-- 3. z-10 so it goes over the main page content, but remains below the hamburger close icon (z-20) -->
+        <!-- 4. display: hidden by default, but will set to display: flex (appears on screen) when the hamburger icon is clicked (has the "open" class active) -->
+        <div
+          id="menu"
+          class="absolute top-0 left-0 z-10 hidden min-h-screen w-full flex-col space-y-3 bg-black pr-1 pt-40 pl-12 text-lg uppercase text-white"
+        >
+          <a href="#" class="hover:text-pink-500">Abouts</a>
+          <a href="#" class="hover:text-pink-500">Career</a>
+          <a href="#" class="hover:text-pink-500">Events</a>
+          <a href="#" class="hover:text-pink-500">Products</a>
+          <a href="#" class="hover:text-pink -500">Support </a>
+        </div>
         <!-- Bottom Hero Content Container -->
         <div
           class="my-32 max-w-lg border-2 p-4 font-sans text-4xl uppercase text-white md:p-10 md:text-6xl"
