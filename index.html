@@ -103,5 +103,225 @@
         </div>
       </div>
     </section>
+    <!-- Creations Section -->
+    <section id="creations">
+      <!-- Main Creations Container -->
+      <div class="container mx-auto my-32 max-w-6xl px-6 text-gray-900">
+        <!-- Creations Header Container -->
+        <div class="mb-20 flex justify-center md:justify-between">
+          <!-- Header Text -->
+          <h2 class="text-center text-4xl uppercase md:text-left md:text-5xl">
+            Our Creations
+          </h2>
+          <!-- Action Button -->
+          <!-- 1. display: hidden so it does not appear on small screens -->
+          <!-- 2. md:block so it appears on larger screens -->
+          <button class="btn hidden md:block">See all</button>
+        </div>
+        <!-- First Items Array Container (Items 1-4) -->
+        <div
+          class="flex w-full flex-col justify-between space-y-6 text-2xl uppercase text-white md:flex-row md:space-y-0 md:space-x-8"
+        >
+          <!-- Item Main Container -->
+          <!-- 1. relative container since two children will be absolute -->
+          <!-- 2. overflow: hidden to avoid image overflowing on hover (group-hover:scale-110) -->
+          <!-- 3. md:w-1/4 so each Items Array Container hosts four items -->
+          <div class="group relative overflow-hidden md:w-1/4">
+            <!-- Item Desktop Image -->
+            <!-- 1. hidden on mobile -->
+            <!-- 2. appears on larger screens -->
+            <img
+              src="images/desktop/image-deep-earth.jpg"
+              alt=""
+              class="hidden w-full duration-200 group-hover:scale-110 md:block"
+            />
+            <!-- Item Mobile Image -->
+            <!-- 1. hidden on larger screens -->
+            <!-- 2. appears on mobile -->
+            <img
+              src="images/mobile/image-deep-earth.jpg"
+              alt=""
+              class="w-full md:hidden"
+            />
+            <!-- Gradient Overlay -->
+            <!-- 1. first absolute-positioned child -->
+            <!-- 2. MUST go before the Creation Title container so the <h5> text appears on top (default z-index behavior) -->
+            <!-- 3. top-0 bottom-0 right-0 left-0 so this overlay covers the entire Item Main Container's border-box area -->
+            <!-- 4. bg-gradient-to-b indicates a color transition from top to bottom -->
+            <!-- 5. on normal conditions, the gradient overlay transitions from a transparent color (top) to a dark gray color (bottom) -->
+            <!-- 6. on hover conditions, the gradient overlay transitions from a light gray color (top) to a white color (bottom) -->
+            <div
+              class="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70"
+            ></div>
+            <!-- Creation Title -->
+            <!-- 1. second absolute-positioned child -->
+            <!-- 2. MUST go after the Gradient Overlay so this text remains above it -->
+            <h5
+              class="absolute bottom-4 w-52 px-6 duration-200 group-hover:text-black md:bottom-8 md:px-10"
+            >
+              Deep Earth
+            </h5>
+          </div>
+          <!-- Item 2 -->
+          <div class="group relative overflow-hidden md:w-1/4">
+            <img
+              src="images/desktop/image-night-arcade.jpg"
+              alt=""
+              class="hidden w-full duration-200 group-hover:scale-110 md:block"
+            />
+            <img
+              src="images/mobile/image-night-arcade.jpg"
+              alt=""
+              class="w-full md:hidden"
+            />
+            <div
+              class="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70"
+            ></div>
+            <h5
+              class="absolute bottom-4 w-52 px-6 duration-200 group-hover:text-black md:bottom-8 md:px-10"
+            >
+              Night Arcade
+            </h5>
+          </div>
+          <!-- Item 3 -->
+          <div class="group relative overflow-hidden md:w-1/4">
+            <img
+              src="images/desktop/image-soccer-team.jpg"
+              alt=""
+              class="hidden w-full duration-200 group-hover:scale-110 md:block"
+            />
+            <img
+              src="images/mobile/image-soccer-team.jpg"
+              alt=""
+              class="w-full md:hidden"
+            />
+            <div
+              class="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70"
+            ></div>
+            <h5
+              class="absolute bottom-4 w-52 px-6 duration-200 group-hover:text-black md:bottom-8 md:px-10"
+            >
+              Soccer Team VR
+            </h5>
+          </div>
+          <!-- Item 4 -->
+          <div class="group relative overflow-hidden md:w-1/4">
+            <img
+              src="images/desktop/image-grid.jpg"
+              alt=""
+              class="hidden w-full duration-200 group-hover:scale-110 md:block"
+            />
+            <img
+              src="images/mobile/image-grid.jpg"
+              alt=""
+              class="w-full md:hidden"
+            />
+            <div
+              class="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70"
+            ></div>
+            <h5
+              class="absolute bottom-4 w-52 px-6 duration-200 group-hover:text-black md:bottom-8 md:px-10"
+            >
+              The Grid
+            </h5>
+          </div>
+        </div>
+        <!-- Second Items Array Container (Items 5-8) -->
+        <div
+          class="mt-10 flex w-full flex-col justify-between space-y-6 text-2xl uppercase text-white md:flex-row md:space-y-0 md:space-x-8"
+        >
+          <!-- Item 5 -->
+          <div class="group relative overflow-hidden md:w-1/4">
+            <img
+              src="images/desktop/image-from-above.jpg"
+              alt=""
+              class="hidden w-full duration-200 group-hover:scale-110 md:block"
+            />
+            <img
+              src="images/mobile/image-from-above.jpg"
+              alt=""
+              class="w-full md:hidden"
+            />
+            <div
+              class="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70"
+            ></div>
+            <h5
+              class="absolute bottom-4 w-52 px-6 duration-200 group-hover:text-black md:bottom-8 md:px-10"
+            >
+              From Up Above VR
+            </h5>
+          </div>
+          <!-- Item 6 -->
+          <div class="group relative overflow-hidden md:w-1/4">
+            <img
+              src="images/desktop/image-pocket-borealis.jpg"
+              alt=""
+              class="hidden w-full duration-200 group-hover:scale-110 md:block"
+            />
+            <img
+              src="images/mobile/image-pocket-borealis.jpg"
+              alt=""
+              class="w-full md:hidden"
+            />
+            <div
+              class="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70"
+            ></div>
+            <h5
+              class="absolute bottom-4 w-52 px-6 duration-200 group-hover:text-black md:bottom-8 md:px-10"
+            >
+              Pocket Borealis
+            </h5>
+          </div>
+          <!-- Item 7 -->
+          <div class="group relative overflow-hidden md:w-1/4">
+            <img
+              src="images/desktop/image-curiosity.jpg"
+              alt=""
+              class="hidden w-full duration-200 group-hover:scale-110 md:block"
+            />
+            <img
+              src="images/mobile/image-curiosity.jpg"
+              alt=""
+              class="w-full md:hidden"
+            />
+            <div
+              class="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70"
+            ></div>
+            <h5
+              class="absolute bottom-4 w-52 px-6 duration-200 group-hover:text-black md:bottom-8 md:px-10"
+            >
+              Curiosity
+            </h5>
+          </div>
+          <!-- Item 8 -->
+          <div class="group relative overflow-hidden md:w-1/4">
+            <img
+              src="images/desktop/image-fisheye.jpg"
+              alt=""
+              class="hidden w-full duration-200 group-hover:scale-110 md:block"
+            />
+            <img
+              src="images/mobile/image-fisheye.jpg"
+              alt=""
+              class="w-full md:hidden"
+            />
+            <div
+              class="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70"
+            ></div>
+            <h5
+              class="absolute bottom-4 w-52 px-6 duration-200 group-hover:text-black md:bottom-8 md:px-10"
+            >
+              Make It Fisheye
+            </h5>
+          </div>
+        </div>
+        <!-- Bottom Button Container -->
+        <!-- 1. this is the "See All" button that is inside the Creations Header Container -->
+        <!-- 2. this button will ONLY appear in mobile, hence the md:hidden -->
+        <div class="mt-10 flex justify-center md:hidden">
+          <button class="btn w-full md:hidden">See All</button>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

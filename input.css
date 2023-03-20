@@ -6,6 +6,10 @@
 }
 
 @layer components {
+  .btn {
+    /* tracking-widest edited to have 0.3rem letter spacing */
+    @apply border-2 border-black px-10 py-2 font-alata font-bold uppercase tracking-widest hover:bg-black hover:text-white;
+  }
 }
 
 #hero {
@@ -14,7 +18,7 @@
   background-size: cover;
 }
 
-@media(max-width: 576px) {
+@media (max-width: 576px) {
   #hero {
     background-image: url('../images/mobile/image-hero.jpg');
     background-position: center;
