@@ -10,6 +10,10 @@
     /* tracking-widest edited to have 0.3rem letter spacing */
     @apply border-2 border-black px-10 py-2 font-alata font-bold uppercase tracking-widest hover:bg-black hover:text-white;
   }
+  .ficon:hover {
+    filter: invert(53%) sepia(68%) saturate(434%) hue-rotate(121deg)
+      brightness(101%) contrast(94%);
+  }
 }
 
 #hero {
